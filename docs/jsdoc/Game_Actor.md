@@ -8,7 +8,7 @@
 
 [Game_Battler](Game_Battler.md)のサブクラス。
 
-大域変数である $gameActors([Game_Actors](Game_Actors.md))、$gameParty([Game_Party](Game_Party.md)) から参照されるアクターの実体。
+大域変数である $gameActors([Game_Actors](Game_Actors.md))、$gameParty([Game_Party](Game_Party.md)) から参照されるアクターの実体。  
 アクターのパラメータの取得、画像の設定、バトルに関わる処理とサイドビュー時の画像処理に関わる。
 
 ##### Properties:
@@ -5908,6 +5908,19 @@ Trades the new item with the old item in the party inventory.
 
 #### traitObjects () → {[Array](Array.md).<*>}
 
+ 特性を持つオブジェクト（アクター、職業、現在の装備）の配列を返す。
+ 
+ アクター  
+ [Actor](RPG.Actor.md)([$dataActors](global.md#dataactors-arrayrpgactor))
+  
+ 職業  
+ [Class](RPG.Class.md)([$dataClasses](global.md#dataclasses-arrayrpgclass))
+  
+ 現在の装備  
+   [Armor](RPG.Armor.md)([$dataArmors](global.md#dataarmors-arrayrpgarmor))  
+   [Weapon](RPG.Weapon.md)([$dataWeapons](global.md#dataweapons-arrayrpgweapon))   
+ 
+ 
 <dl>
                 <dt>Overrides:</dt>
                 <dd>
